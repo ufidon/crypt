@@ -5,6 +5,7 @@
 # 参考教材
 * [Computer Security: Principles and Practice, 4th](https://www.pearson.com/us/higher-education/program/Stallings-Computer-Security-Principles-and-Practice-4th-Edition/PGM1805260.html?tab=resources)
 * [COMPUTER SECURITY A Hands-on Approach](https://www.handsonsecurity.net/)
+* [Handbook of Applied Cryptography](http://cacr.uwaterloo.ca/hac/)
 * [理解密码学](http://www.crypto-textbook.com/)
 
 
