@@ -2,7 +2,7 @@
 
 ## module00 Overview
 
-## module01 Cryptography
+## module01 Classical Cryptography
 **Contepts**
 
 
@@ -12,7 +12,7 @@
 __references__
 * [Computer Security: Principles and Practice, 4th](https://www.pearson.com/us/higher-education/program/Stallings-Computer-Security-Principles-and-Practice-4th-Edition/PGM1805260.html?tab=resources)
 
-## module02 Asymmetric Ciphers
+## module02 Modern Cryptography
 **Contepts**
 
 
