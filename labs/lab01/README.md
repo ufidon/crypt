@@ -4,6 +4,7 @@ course materials and references for its350
 ## Lab01: Setup the lab environment
 
 __Description__
+
 Setup the lab environment and get familiar with the SEED VM. You need a USB 3.0+ thumb drive or USB 3.0+ SSD with at least 256GB or install on your own laptop with free space of at least 256GB.
 
 * Download and install [VirtualBox](https://www.virtualbox.org/) and the extension pack
@@ -15,6 +16,7 @@ Setup the lab environment and get familiar with the SEED VM. You need a USB 3.0+
 
 	
 __Report__
+
 Write a report about:
 
 * the process you setup the lab environment
