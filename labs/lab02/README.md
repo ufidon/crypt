@@ -17,7 +17,6 @@ Put the contents of plaintext or ciphertext in source code is _NOT allowed_.
 __Report__
 
 Write a report about the process you complete the tasks in the description, key screen snapshots are needed as evidences.
-Submit you your source code files together with the report in Brightspace, _don't zip them_, append the source code files in the report.
 
 _Review questions:_
 
