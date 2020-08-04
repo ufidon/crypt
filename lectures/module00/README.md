@@ -2,7 +2,7 @@
 course materials and references for its350
 
 ## IT systems
-![IT Systems](/figs/its350overview.png)
+![IT Systems](./figs/its350overview.png)
 
 * __Concepts__
   * [Information system](https://en.wikipedia.org/wiki/Information\_system)
