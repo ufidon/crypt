@@ -40,7 +40,7 @@ S(State Name) 				| Indiana
 C(Country Name) 			| US 
 
 
-_Note: No challenge password or optional company name._
+_Note: No challenge password or optional company name above._
 
 
 For example,
@@ -98,7 +98,7 @@ sudo subl /etc/hosts
 ```
 
 * Step 2: _Configuring the web server._ Launch a simple web server with your certificate. OpenSSL allows you to start a simple web server using the  s\_server  command:
-* 
+
 ```bash
 # 9. Combine your secret key and your certificate into one file
 cp BillClinton.pri server.pem
@@ -153,7 +153,7 @@ Please also do the following tasks:
   2. Check your digital certificate from the locker icon at the left side of your website address in the address box of the browser and find its _chain of trust_
   3. How is you digital certificate verified automatically by the browser?
   <!--4. Make a copy of server.pem, then modify a single byte of server.pem using subl, and restart the server, and reload the URL (Repeat \textbf{Step 2}). What do you observe? Make sure you restore the original server.pem afterward. Note: the server may not be able to restart if certain places of server.pem is corrupted; in that case, choose another place to modify.-->
-  1. Since YourFirstNameYourLastName.its350.edu points to the localhost, if you use https://localhost instead,  you will be connecting to the same web server. Please do so, _describe and explain_ your observations.
+  4. Since YourFirstNameYourLastName.its350.edu points to the localhost, if you use https://localhost instead,  you will be connecting to the same web server. Please do so, _describe and explain_ your observations.
 
 
 __Report__
