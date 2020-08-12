@@ -124,8 +124,8 @@ course materials and references for its350
         * [Syslog](https://en.wikipedia.org/wiki/Syslog)
           * [Log file](https://en.wikipedia.org/wiki/Log\_file)
           * _Windows_
-          * [Windows Security Log](https://en.wikipedia.org/wiki/Windows\_Security\_Log)
-          * [Event Viewer](https://en.wikipedia.org/wiki/Event\_Viewer)
+            * [Windows Security Log](https://en.wikipedia.org/wiki/Windows\_Security\_Log)
+            * [Event Viewer](https://en.wikipedia.org/wiki/Event\_Viewer)
         * [Log analysis](https://en.wikipedia.org/wiki/Log\_analysis)
 
 
