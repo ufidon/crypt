@@ -10,7 +10,7 @@ Based on the combinations of encryption/decryption/signing/verification/digest, 
 * Encrypt-then-sign
 * Sign-then-encrypt
 
-Find a classmate as your communication partner, complete Task 2 and 3 below collaboratively, but complete Task 1 and 4 by yourself. Name all the files properly with your first name and your partner's first name. For example, the message send from Alice to Bob can be named as `Message\_Alice2Bob' or simply `mA2B'.
+Find a classmate as your communication partner, complete Task 2 and 3 below collaboratively, but complete Task 1 and 4 by yourself. Name all the files properly with your first name and your partner's first name. For example, the message send from Alice to Bob can be named as 'Message\_Alice2Bob' or simply 'mA2B'.
 
 1. Task 1: Create a pair of asymmetric keys (10%)
 
@@ -18,7 +18,7 @@ In this task, complete the following steps:
 
   1. Generate a pair of RSA private/public keys, protect your private key with a secret password known only to yourself
   2. Email your public key to your partner
-  3. Create a short message <!-- $ M : $ --> <img style="transform: translateY(0.25em);" src="../../svg/TkgA9uCEN8.svg"/> `Message from YourName to Your partner's name', for example, <!-- $ M : $ --> <img style="transform: translateY(0.25em);" src="../../svg/TkgA9uCEN8.svg"/> `Message from Alice to Bob'
+  3. Create a short message <!-- $ M : $ --> <img style="transform: translateY(0.25em);" src="../../svg/TkgA9uCEN8.svg"/> 'Message from YourName to Your partner's name', for example, <!-- $ M : $ --> <img style="transform: translateY(0.25em);" src="../../svg/TkgA9uCEN8.svg"/> 'Message from Alice to Bob'
 	
 
 2. Task 2: Encrypt-then-sign (35%)
