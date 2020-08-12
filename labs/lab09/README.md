@@ -265,7 +265,7 @@ For further information refer to [Gnu Privacy Guard (GnuPG) Mini Howto](https://
 Write a report about the process you complete the tasks in the description, key screen snapshots are needed as evidences.
 
 
-### References* 
+### References
 * [Pretty Good Privacy.](https://en.wikipedia.org/wiki/Pretty\_Good\_Privacy)
 * [GNU Privacy Guard.](https://en.wikipedia.org/wiki/GNU\_Privacy\_Guard)
 * [Gpg4win.](https://en.wikipedia.org/wiki/Gpg4win)
