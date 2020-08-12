@@ -36,7 +36,7 @@ Refer to the [online tutorial](https://guide.duo.com/third-party-accounts) to se
 ### Task 3 (30%)
 DUO is just one of many authenticators supporting FIDO. There are lots FIDO-compliant authenticators such as [Google authenticator](https://en.wikipedia.org/wiki/Google\_Authenticator), [Microsoft authenticator](https://docs.microsoft.com/en-us/azure/active-directory/user-help/user-help-auth-app-overview), etc.
 
-Refer to the online tutorial [How to Set Up 2-Factor Authentication for Login and sudo](https://www.linux.com/topic/desktop/how-set-2-factor-authentication-login-and-sudo/) or [Install & Configure Google Authenticator in Ubuntu 16.04 & 17.04](https://thelinuxcode.com/install-configure-google-authenticator-ubuntu-16-04-17-04/) to 
+Refer to the online tutorial  [Install & Configure Google Authenticator in Ubuntu 16.04 & 17.04](https://thelinuxcode.com/install-configure-google-authenticator-ubuntu-16-04-17-04/) to 
 
 1. setup Google authenticator for your SEED virtual machine. Use command 
 
@@ -45,9 +45,10 @@ Refer to the online tutorial [How to Set Up 2-Factor Authentication for Login an
 sudo subl /etc/pam.d/common-auth
 ```
 
-2. logout then login your virtual machine, it will ask for the password and a authentication code.
+2. logout then login your virtual machine, it will ask for the login password and a authentication code.
 
 3.  *use \# to comment out the line 'auth required pam\_google\_authenticator.so' you added above to disable Google 2FA.*
+4.  logout then login your virtual machine, it will only ask for the login password.
 
 ### Task 4 (30%)
 There are many open-source two-factor authentication applications for systems utilizing one-time password protocols --- HOTP and TOTP, such as [WinAuth](https://winauth.github.io/winauth), [Authenticator](https://gitlab.gnome.org/World/Authenticator),  [andOTP](https://github.com/andOTP/andOTP), [FreeOTP](https://freeotp.github.io/). This means that no proprietary server-side component is necessary: use any server-side component that implements these standards. There are open-source 2FA server as well: [LinOTP](https://www.linotp.org), [FreeIPA](https://www.freeipa.org/),  [privacyIDEA](https://github.com/privacyidea/privacyidea), [dynalogin](https://dynalogin.org).
