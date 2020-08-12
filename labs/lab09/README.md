@@ -26,7 +26,6 @@ sudo apt install git
 
 		
 * Step 3: Setup ssh credentials.
-* 
 ```bash
 # 1. Generate a new pair of SSH private/public key
 # Follow the prompts, accept the default file location by pressing enter
@@ -71,7 +70,7 @@ In this task, you will use GnuPG to manage your private/public keys, certificate
 
 Get an overview about [GnuPG](https://en.wikipedia.org/wiki/GNU\_Privacy\_Guard) and the Ubuntu help document [GnuPrivacyGuard How to](https://help.ubuntu.com/community/GnuPrivacyGuardHowto).
 
-##### Data/program integrity assurance (20%)
+##### 2.1 Data/program integrity assurance (20%)
 GnuPG can be used to _verify data integrity_, take GnuPG as an example, complete the subtasks:
 
 * Step 1: Download GnuPG _tarball_ and its _signature_ files from [its official website](https://gnupg.org/download/index.html), save them in the same folder.
@@ -93,7 +92,7 @@ For further information refer to
 [GnuPG Integrity Check](https://gnupg.org/download/integrity\_check.html) and [Verify a PGP signature with GnuPG](https://www.circuidipity.com/verify-pgp-signature-gnupg/).
 
 
-##### Confidentiality assurance (20%)
+##### 2.2 Confidentiality assurance (20%)
 GnuPG can be used to _secure communications_. Find a classmate works as your communication partner to complete the subtasks:
 	
 * Step 1: Use GnuPG, create a personal OpenPGP key pair.
@@ -138,7 +137,7 @@ cd firefox/ && ./firefox
 ```
 
 
-##### Privacy assurance (30%)
+##### 2.3 Privacy assurance (30%)
 GnuPG can be used to _protect data_. Create a folder 'test' containing at least three image files, use your OpenPGP key pair and your friend's public key (download from the GPG keyserver on which your friend published her/his public key) to complete the subtasks:
 	
 * Step 1: Check sum, encryption and decryption work on single file, for folder, folder needs to be compressed first.
