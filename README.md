@@ -23,6 +23,7 @@ In this course, we will create three virtual machines with SEED Ubuntu 16.04 LTS
 * [COMPUTER SECURITY A Hands-on Approach](https://www.handsonsecurity.net/)
 * [Handbook of Applied Cryptography](http://cacr.uwaterloo.ca/hac/)
 * [Understanding Cryptography](http://www.crypto-textbook.com/)
+* [Building Internet Firewalls](https://docstore.mik.ua/orelly/networking/firewall/index.htm)
 
 
 # Referenced labs
