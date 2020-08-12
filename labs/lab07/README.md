@@ -40,7 +40,7 @@ In this task, complete the following steps:
   1. __Sign__ <!-- $ M $ --> <img style="transform: translateY(0.25em);" src="../../svg/Cz6uMB1L2n.svg"/> with your private key, and get the signature <!-- $ S $ --> <img style="transform: translateY(0.25em);" src="../../svg/dWhO5fpKHV.svg"/>
   2. __Encrypt__ <!-- $ M $ --> <img style="transform: translateY(0.25em);" src="../../svg/Cz6uMB1L2n.svg"/> with your partner's public key, and get the ciphertext <!-- $ C $ --> <img style="transform: translateY(0.25em);" src="../../svg/AsaAIYPtwM.svg"/>
   3. Email both <!-- $ C $ --> <img style="transform: translateY(0.25em);" src="../../svg/AsaAIYPtwM.svg"/> and <!-- $ S $ --> <img style="transform: translateY(0.25em);" src="../../svg/dWhO5fpKHV.svg"/> to your partner
-  4. Decrypt the <!-- $ C' $ --> <img style="transform: translateY(0.25em);" src="../../svg/gIOqrGbqIJ.svg"/> you received with your private key, and get the message $ M' $
+  4. Decrypt the <!-- $ C' $ --> <img style="transform: translateY(0.25em);" src="../../svg/gIOqrGbqIJ.svg"/> you received with your private key, and get the message <!-- $ M' $ --> <img style="transform: translateY(0.25em);" src="../../svg/WVbQy3VEg5.svg"/>
   5. Verify the <!-- $ S' $ --> <img style="transform: translateY(0.25em);" src="../../svg/2zXazcu5qH.svg"/> you received with your partner's public key against the <!-- $ M' $ --> <img style="transform: translateY(0.25em);" src="../../svg/WVbQy3VEg5.svg"/> you get in the previous step to check the authenticity and integrity of <!-- $ M' $ --> <img style="transform: translateY(0.25em);" src="../../svg/WVbQy3VEg5.svg"/>
 
 
