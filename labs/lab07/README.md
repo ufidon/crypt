@@ -12,7 +12,7 @@ Based on the combinations of encryption/decryption/signing/verification/digest, 
 
 Find a classmate as your communication partner, complete Task 2 and 3 below collaboratively, but complete Task 1 and 4 by yourself. Name all the files properly with your first name and your partner's first name. For example, the message send from Alice to Bob can be named as 'Message\_Alice2Bob' or simply 'mA2B'.
 
-1. Task 1: Create a pair of asymmetric keys (10%)
+__Task 1: Create a pair of asymmetric keys (10%)__
 
 In this task, complete the following steps:
 
@@ -21,7 +21,7 @@ In this task, complete the following steps:
   3. Create a short message <!-- $ M : $ --> <img style="transform: translateY(0.25em);" src="../../svg/TkgA9uCEN8.svg"/> 'Message from YourName to Your partner's name', for example, <!-- $ M : $ --> <img style="transform: translateY(0.25em);" src="../../svg/TkgA9uCEN8.svg"/> 'Message from Alice to Bob'
 	
 
-2. Task 2: Encrypt-then-sign (35%)
+__Task 2: Encrypt-then-sign (35%)__
 
 In this task, complete the following steps:
 
@@ -33,7 +33,7 @@ In this task, complete the following steps:
 
 
 
-3. Task 3: Sign-then-encrypt (35\%)
+__Task 3: Sign-then-encrypt (35%)__
 
 In this task, complete the following steps:
 
@@ -44,15 +44,15 @@ In this task, complete the following steps:
   5. Verify the <!-- $ S' $ --> <img style="transform: translateY(0.25em);" src="../../svg/2zXazcu5qH.svg"/> you received with your partner's public key against the <!-- $ M' $ --> <img style="transform: translateY(0.25em);" src="../../svg/WVbQy3VEg5.svg"/> you get in the previous step to check the authenticity and integrity of <!-- $ M' $ --> <img style="transform: translateY(0.25em);" src="../../svg/WVbQy3VEg5.svg"/>
 
 
-4. Task 4: Comparison (20%)
+__Task 4: Comparison (20%)__
 
 Answer the following questions and justify your solutions.
 
 
-  1. Can `encrypt-then-sign' assure integrity, authenticity, non-repudiation and confidentiality?
-  2. Can `sign-then-encrypt' assure integrity, authenticity, non-repudiation and confidentiality?
-  3. Can the sender be spoofed by the receiver in `encrypt-then-sign'?
-  4. Can the sender be spoofed by the receiver in `sign-then-encrypt'?
+  1. Can 'encrypt-then-sign' assure integrity, authenticity, non-repudiation and confidentiality?
+  2. Can 'sign-then-encrypt' assure integrity, authenticity, non-repudiation and confidentiality?
+  3. Can the sender be spoofed by the receiver in 'encrypt-then-sign'?
+  4. Can the sender be spoofed by the receiver in 'sign-then-encrypt'?
 
 
 __Report__
