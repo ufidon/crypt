@@ -34,10 +34,13 @@ press key 'SPACE' to scroll down, 'q' to quit.
 2. Step 2: *Set the default rules and enable ufw on all VMs:* run the commands on each VM.
 
   * Setup the default policy to *allow*: 
+  
   :sparkles: sudo ufw default allow
   * Enable the firewall: 
+  
   :sparkles: sudo ufw enable
   * Check the firewall status: 
+  
   :sparkles: sudo ufw status verbose. 
   **Run this command to verify your operation result every time when you add/modify/delete firewall rules.**
 
@@ -54,7 +57,9 @@ press key 'SPACE' to scroll down, 'q' to quit.
   :sparkles: sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 23 
   then from <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, try telnet to <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the command in <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>
   
-  :sparkles: telnet <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>  will fail
+  :sparkles: telnet <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>  
+  
+  will fail
 
 4. Step 4: Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from visiting an external web site E: a website may have several IP addresses, they should be all blocked. The IP addresses of domain name E can be found using command [dig E](https://superuser.com/questions/152576/how-to-get-all-ips-of-a-domain), for example,  
 :sparkles: dig www.facebook.com  
@@ -104,6 +109,7 @@ Then you can evade the ingress blockage  through ssh tunnel using *reverse port 
 * *Step 2:* Reset the proxy of Firefox to 'No proxy' on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>
 * *Step 3:* Surf the secret website on your work machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>. Open Firefox, browse ' :sparkles: http://localhost', you should see a webpage says Apache worked.
 * *Step 4:* Setup a reverse tunnel from the work computer <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to the home <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>: 
+
 :sparkles: ssh -R 9000:<!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>:80  seed@<!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/> 
 	This command is run on the work computer <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>.
 * *Step 5:* Surf the secret website from home: On the home computer  <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, use Firefox browse  :sparkles: http://localhost:9000, the  secret web page in the company should show up.
