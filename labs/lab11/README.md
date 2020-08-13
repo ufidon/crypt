@@ -77,7 +77,7 @@ In <!-- $ V\!M_{attack} $ --> <img style="transform: translateY(0.25em);" src=".
 
 In <!-- $ V\!M_{victim} $ --> <img style="transform: translateY(0.25em);" src="../../svg/nNZaRSbpGS.svg"/>, open a new terminal window, run command 
 
-___________________________________________
+-------------------------------------------
 telnet <!-- $ I\!P_{attack} $ --> <img style="transform: translateY(0.25em);" src="../../svg/MQ9z0nuaXz.svg"/>
 -------------------------------------------
 
