@@ -25,7 +25,7 @@ to find the IP settings for each VM, make sure all VMs can communicate (ping) wi
 
 ### Task 1 (40%): Using Firewall
 
-1. Step 1: *Get familiar with ufw:* Find the integrated user manual from command line using 
+1. Step 1: *Get familiar with ufw:* Find its user manual from command line using 
 ```bash
 man ufw
 ```
@@ -33,25 +33,40 @@ press key 'SPACE' to scroll down, 'q' to quit.
 
 2. Step 2: *Set the default rules and enable ufw on all VMs:* run the commands on each VM.
 
-  * Setup the default policy to *allow*: :sparkles: sudo ufw default allow
-  * Enable the firewall: :sparkles: sudo ufw enable
-  * Check the firewall status: :sparkles: sudo ufw status verbose. **Run this command to verify your operation result every time when you add/modify/delete firewall rules.**
+  * Setup the default policy to *allow*: 
+  :sparkles: sudo ufw default allow
+  * Enable the firewall: 
+  :sparkles: sudo ufw enable
+  * Check the firewall status: 
+  :sparkles: sudo ufw status verbose. 
+  **Run this command to verify your operation result every time when you add/modify/delete firewall rules.**
 
-3. Step 3: Block egress and ingress of telnet:  Set the firewall rules then try telnet. *Every time you telneted into another VM, run command 'ls' to check you are in the other VM now, after that, type 'exit' to return to your original VM.*
+3. Step 3: Block egress and ingress of telnet on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>:  Set the firewall rules then try telnet. *Every time you telneted into another VM, run command 'ls' to check you are in the other VM now, after that, type 'exit' to return to your original VM.*
 
-  * Check you can telnet from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, run the command on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>:  :sparkles: telnet <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>
-  * Check you can telnet from <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> to <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the command on <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>:  :sparkles: telnet <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>
-  * Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from doing telnet to <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>(Block egress, from the perspective of <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the commands on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>):  :sparkles: sudo ufw deny out to <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  port 23  :sparkles: telnet <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  will fail
-  * Prevent <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> from doing telnet to Machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>(Block ingress, again from the perspective of <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, set the firewall rule on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>):  :sparkles: sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 23 
+  * Check you can telnet from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, run the command on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>:  
+  :sparkles: telnet <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>
+  * Check you can telnet from <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> to <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the command on <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>:  
+  :sparkles: telnet <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>
+  * Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from doing telnet to <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>(Block egress, from the perspective of <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the commands on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>):  
+  :sparkles: sudo ufw deny out to <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  port 23  
+  :sparkles: telnet <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  will fail
+  * Prevent <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> from doing telnet to Machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>(Block ingress, again from the perspective of <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, set the firewall rule on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>):  
+  :sparkles: sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 23 
   then from <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, try telnet to <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the command in <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>
+  
   :sparkles: telnet <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>  will fail
 
-4. Step 4: Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from visiting an external web site E: a website may have several IP addresses, they should be all blocked. The IP addresses of domain name E can be found using command [dig E](https://superuser.com/questions/152576/how-to-get-all-ips-of-a-domain), for example,  :sparkles: dig www.facebook.com and  :sparkles: dig facebook.com
+4. Step 4: Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from visiting an external web site E: a website may have several IP addresses, they should be all blocked. The IP addresses of domain name E can be found using command [dig E](https://superuser.com/questions/152576/how-to-get-all-ips-of-a-domain), for example,  
+:sparkles: dig www.facebook.com  
+:sparkles: dig facebook.com
 
   * Check you can access the external web site E using Firefox
-  * Find the IP addresses of the external web site E using  :sparkles: dig E
-  * Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from visiting an external web site E:  :sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 80
-   :sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 443
+  * Find the IP addresses of the external web site E using  
+  :sparkles: dig E
+  * Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from visiting an external web site E:  
+  :sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 80
+   
+  :sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 443
   * Check you can NOT access the external web site E using Firefox now. *To become effective: close tabs of Facebook, clear Firefox cached data, then restart Firefox*
  
 ### Task 2 (30%): Evading Egress Filtering
@@ -60,7 +75,8 @@ Now <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../s
 Work on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, 
 
 * Step 1: setup a ssh tunnel from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> with dynamic port forwarding: run the command on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>
-	 :sparkles: ssh -D 9000 -C seed@<!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>
+
+:sparkles: ssh -D 9000 -C seed@<!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>
 * Step 2: setup proxy: Set the proxy for Firefox in <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> as the figure 'Proxy setup in Firefox using ssh tunnel':
 ![Proxy setup in Firefox using ssh tunnel](./figs/proxy.jpg)
 
@@ -79,13 +95,16 @@ Then you can evade the ingress blockage  through ssh tunnel using *reverse port 
 
 
 * *Step 1:* Setup firewall rules blocking ingress ssh and http/https on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>}.
-	 :sparkles:  sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 22
-	 :sparkles:  sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 80
-	 :sparkles:  sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 443
+
+:sparkles:  sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 22
+
+:sparkles:  sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 80
+
+:sparkles:  sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 443
 * *Step 2:* Reset the proxy of Firefox to 'No proxy' on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>
 * *Step 3:* Surf the secret website on your work machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>. Open Firefox, browse ' :sparkles: http://localhost', you should see a webpage says Apache worked.
 * *Step 4:* Setup a reverse tunnel from the work computer <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to the home <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>: 
-	 :sparkles: ssh -R 9000:<!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>:80  seed@<!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/> 
+:sparkles: ssh -R 9000:<!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>:80  seed@<!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/> 
 	This command is run on the work computer <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>.
 * *Step 5:* Surf the secret website from home: On the home computer  <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, use Firefox browse  :sparkles: http://localhost:9000, the  secret web page in the company should show up.
 * *Step 6:* Manipulate the tunnel:
