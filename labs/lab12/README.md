@@ -55,7 +55,9 @@ press key 'SPACE' to scroll down, 'q' to quit.
   :sparkles: telnet <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  will fail
   * Prevent <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> from doing telnet to Machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>(Block ingress, again from the perspective of <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, set the firewall rule on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>):  
   :sparkles: sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 23 
+
   then from <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, try telnet to <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the command in <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>
+  
   :sparkles: telnet <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>  
   
   will fail
