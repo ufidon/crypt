@@ -56,7 +56,6 @@ press key 'SPACE' to scroll down, 'q' to quit.
   * Prevent <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> from doing telnet to Machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>(Block ingress, again from the perspective of <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, set the firewall rule on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>):  
   :sparkles: sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 23 
   then from <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, try telnet to <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the command in <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>
-  
   :sparkles: telnet <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>  
   
   will fail
@@ -69,8 +68,7 @@ press key 'SPACE' to scroll down, 'q' to quit.
   * Find the IP addresses of the external web site E using  
   :sparkles: dig E
   * Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from visiting an external web site E:  
-  :sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 80
-   
+  :sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 80   
   :sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 443
   * Check you can NOT access the external web site E using Firefox now. *To become effective: close tabs of Facebook, clear Firefox cached data, then restart Firefox*
  
@@ -81,7 +79,7 @@ Work on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../
 
 * Step 1: setup a ssh tunnel from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> with dynamic port forwarding: run the command on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>
 
-:sparkles: ssh -D 9000 -C seed@<!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>
+:sparkles: ssh  -D  9000  -C  seed@<!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>
 * Step 2: setup proxy: Set the proxy for Firefox in <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> as the figure 'Proxy setup in Firefox using ssh tunnel':
 ![Proxy setup in Firefox using ssh tunnel](./figs/proxy.jpg)
 
@@ -110,8 +108,9 @@ Then you can evade the ingress blockage  through ssh tunnel using *reverse port 
 * *Step 3:* Surf the secret website on your work machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>. Open Firefox, browse '  http://localhost', you should see a webpage says Apache worked.
 * *Step 4:* Setup a reverse tunnel from the work computer <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to the home <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>: 
 
-:sparkles: ssh -R 9000:<!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>:80  seed@<!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/> 
-	This command is run on the work computer <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>.
+:sparkles: ssh  -R  9000:<!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>:80  seed@<!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/> 
+
+This command is run on the work computer <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>.
 * *Step 5:* Surf the secret website from home: On the home computer  <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, use Firefox browse   http://localhost:9000, the  secret web page in the company should show up.
 * *Step 6:* Manipulate the tunnel:
 	Break the tunnel from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, then in <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, refresh   http://localhost:9000 in Firefox, what do you observe?
