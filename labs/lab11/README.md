@@ -72,15 +72,21 @@ ping -c 2 google.com
 Go back to <!-- $ V\!M_{attack} $ --> <img style="transform: translateY(0.25em);" src="../../svg/gGkN0bRu8i.svg"/> and record your observation on the sniffing terminal.
 
 2. Capture any TCP packet that come from a particular IP and with a destination port number 23: filter = 'tcp and (src host <!-- $ I\!P_{victim} $ --> <img style="transform: translateY(0.25em);" src="../../svg/ONuIgXJIoI.svg"/> and dst port 23)'
+
 In <!-- $ V\!M_{attack} $ --> <img style="transform: translateY(0.25em);" src="../../svg/gGkN0bRu8i.svg"/>, open 'sniffer.py' in subl, uncomment line 12 and replace <!-- $ I\!P_{victim} $ --> <img style="transform: translateY(0.25em);" src="../../svg/ONuIgXJIoI.svg"/> your <!-- $ V\!M_{victim} $ --> <img style="transform: translateY(0.25em);" src="../../svg/nNZaRSbpGS.svg"/>'s IP address, comment line 11 and 13, then save it as 'sniff-tcp.py' and run it, don't stop it.
+
 In <!-- $ V\!M_{victim} $ --> <img style="transform: translateY(0.25em);" src="../../svg/nNZaRSbpGS.svg"/>, open a new terminal window, run command 
-```bash 
+
+___________________________________________
 telnet <!-- $ I\!P_{attack} $ --> <img style="transform: translateY(0.25em);" src="../../svg/MQ9z0nuaXz.svg"/>
-``` 
+-------------------------------------------
+
 Go back to <!-- $ V\!M_{attack} $ --> <img style="transform: translateY(0.25em);" src="../../svg/gGkN0bRu8i.svg"/> and 	record your observation on the sniffing terminal.
 
-3. Capture packets come from or go to a particular subnet. You may pick any subnets, such as 8.8.4.0/24. But you should not pick the subnet that your VM attached: filter = 'net 8.8.4.0/24'.
+1. Capture packets come from or go to a particular subnet. You may pick any subnets, such as 8.8.4.0/24. But you should not pick the subnet that your VM attached: filter = 'net 8.8.4.0/24'.
+
 In <!-- $ V\!M_{attack} $ --> <img style="transform: translateY(0.25em);" src="../../svg/gGkN0bRu8i.svg"/>, open 'sniffer.py' in subl, uncomment line 13, comment line 11 and 12, then save it as 'sniff-subnet.py' and run it, don't stop it.
+
 In <!-- $ V\!M_{victim} $ --> <img style="transform: translateY(0.25em);" src="../../svg/nNZaRSbpGS.svg"/>, open a new terminal window, run command 
 ```bash
 ping -c 2 8.8.4.4
