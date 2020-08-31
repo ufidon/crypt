@@ -14,6 +14,7 @@ course materials and references for its350
 * __Classical cipher__
   * [Classical cipher](https://en.wikipedia.org/wiki/Classical\_cipher)
   * [Substitution cipher](https://en.wikipedia.org/wiki/Substitution\_cipher)
+    * [dancing-men cipher](https://www.dcode.fr/dancing-men-cipher)
     * [Caesar cipher](https://en.wikipedia.org/wiki/Caesar\_cipher)
     * [ROT13](https://en.wikipedia.org/wiki/ROT13)  
     * [Atbash](https://en.wikipedia.org/wiki/Atbash)
@@ -76,6 +77,10 @@ course materials and references for its350
 
 * __Software__
   * [cryptool](https://www.cryptool.org/en/)
+  * [dancing-men fonts](https://www.free-fonts.com/dancing-men)
+  * [1001 free fonts](https://www.1001freefonts.com/)
+  * [Ubuntu wiki fonts](https://wiki.ubuntu.com/Fonts)
+  * [Ubuntu font help](https://help.ubuntu.com/community/Fonts)
 
 * __Cipher machines__
   * [Enigma machine](https://en.wikipedia.org/wiki/Enigma\_machine)
