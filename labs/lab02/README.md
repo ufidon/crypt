@@ -16,21 +16,17 @@ Put the contents of plaintext or ciphertext in source code is _NOT encouraged_.
   * compare with what is written
 
 For each encryption and decryption below, complete these steps:
+* Encrypt the message to get the ciphertext
+* Print the ciphertext
+* Decrypt the ciphertext
+* Compare the decryted message with the original message, *they should match*.
 
-a. Encrypt the message to get the ciphertext
-
-b. Print the ciphertext
-
-c. Decrypt the ciphertext
-
-d. Compare the decryted message with the original message, *they should match*.
-
-2. Write code to demonstrate encryption and decryption on text file `military plan one.txt' with Caesar cipher
-3. Write code to demonstrate encryption and decryption on text file `military plan two.txt' with Caesar cipher
-4. Write code to demonstrate encryption and decryption on text file `military plan three.txt' with Caesar cipher
-5. Write code to demonstrate encryption and decryption on text file `military plan one.txt' with Simtran cipher
-6. Write code to demonstrate encryption and decryption on text file `military plan two.txt' with Simtran cipher
-7. Write code to demonstrate encryption and decryption on text file `military plan three.txt' with Simtran cipher
+1. Write code to demonstrate encryption and decryption on text file `military plan one.txt' with Caesar cipher
+2. Write code to demonstrate encryption and decryption on text file `military plan two.txt' with Caesar cipher
+3. Write code to demonstrate encryption and decryption on text file `military plan three.txt' with Caesar cipher
+4. Write code to demonstrate encryption and decryption on text file `military plan one.txt' with Simtran cipher
+5. Write code to demonstrate encryption and decryption on text file `military plan two.txt' with Simtran cipher
+6. Write code to demonstrate encryption and decryption on text file `military plan three.txt' with Simtran cipher
 	
 __Report__
 
