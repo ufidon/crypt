@@ -5,7 +5,7 @@ course materials and references for its350
 
 __Description__
 
-Get familiar with the source code for [Caesar cipher](https://en.wikipedia.org/wiki/Caesar\_cipher) and [Simtran cipher](https://en.wikipedia.org/wiki/Transposition\_cipher)(Simtran cipher is a nickname of Columnar transposition cipher), then complete the following tasks in _Python interactive console_: 
+Get familiar with the source code for [Caesar cipher](https://en.wikipedia.org/wiki/Caesar\_cipher) and [Simtran cipher](https://en.wikipedia.org/wiki/Transposition\_cipher)(Simtran cipher is a variation of Columnar transposition cipher), then complete the following tasks in _Python interactive console_: 
 
 Put the contents of plaintext or ciphertext in source code is _NOT encouraged_.
 
