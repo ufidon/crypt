@@ -21,12 +21,12 @@ For each encryption and decryption below, complete these steps:
 * Decrypt the ciphertext
 * Compare the decryted message with the original message, *they should match*.
 
-1. Write code to demonstrate encryption and decryption on text file `military plan one.txt' with Caesar cipher
-2. Write code to demonstrate encryption and decryption on text file `military plan two.txt' with Caesar cipher
-3. Write code to demonstrate encryption and decryption on text file `military plan three.txt' with Caesar cipher
-4. Write code to demonstrate encryption and decryption on text file `military plan one.txt' with Simtran cipher
-5. Write code to demonstrate encryption and decryption on text file `military plan two.txt' with Simtran cipher
-6. Write code to demonstrate encryption and decryption on text file `military plan three.txt' with Simtran cipher
+2. Write code to demonstrate encryption and decryption on text file `military plan one.txt' with Caesar cipher
+3. Write code to demonstrate encryption and decryption on text file `military plan two.txt' with Caesar cipher
+4. Write code to demonstrate encryption and decryption on text file `military plan three.txt' with Caesar cipher
+5. Write code to demonstrate encryption and decryption on text file `military plan one.txt' with Simtran cipher
+6. Write code to demonstrate encryption and decryption on text file `military plan two.txt' with Simtran cipher
+7. Write code to demonstrate encryption and decryption on text file `military plan three.txt' with Simtran cipher
 	
 __Report__
 
