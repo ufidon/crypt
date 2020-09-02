@@ -10,16 +10,19 @@ Get familiar with the source code for [Caesar cipher](https://en.wikipedia.org/w
 Put the contents of plaintext or ciphertext in source code is _NOT encouraged_.
 
 1. Write code to read and write text files in text mode.
-  1. create a file
-  2. write some sentence into it
-  3. read its contents
-  4. compare with what is written
+  * create a file
+  * write some sentence into it
+  * read its contents
+  * compare with what is written
 
 For each encryption and decryption below, complete these steps:
 
 a. Encrypt the message to get the ciphertext
+
 b. Print the ciphertext
+
 c. Decrypt the ciphertext
+
 d. Compare the decryted message with the original message, *they should match*.
 
 2. Write code to demonstrate encryption and decryption on text file `military plan one.txt' with Caesar cipher
