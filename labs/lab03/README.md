@@ -11,7 +11,7 @@ Get familiar with the source code for One-time pad cipher, complete the followin
 * Use Linux commands and Python to demonstrate encryption and decryption on text file [GeneralMontgomerysDDaySpeech.txt](./data/GeneralMontgomerysDDaySpeech.txt) with One-time pad cipher in both module addition and bit xor algorithms.
 * Use Linux commands and Python to demonstrate encryption and decryption on _ONLY the DATA_ of image file !
 
-[GeneralMontgomerysDDayPlan.jpg](./data/GeneralMontgomerysDDayPlan.jpg) 
+![GeneralMontgomerysDDayPlan.jpg](./data/GeneralMontgomerysDDayPlan.jpg) 
 
 with One-time pad cipher in both module addition and bit xor algorithms.
 
