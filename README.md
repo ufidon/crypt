@@ -1,6 +1,9 @@
 # its350
 Online resources and examples
 
+## Youtube channel
+* [Subscribe for automatic notification](https://www.youtube.com/channel/UCjIWgywyl8qMGgxdzTlI63A)
+
 ## Prerequisite
 In this course, we will create three virtual machines with SEED Ubuntu 16.04 LTS image, all needed software are integrated  in the provided virtual machine image. To be ready for this course, you need to have
 * _Hardware_
