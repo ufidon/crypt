@@ -3,8 +3,6 @@ course materials and references for its350
 
 ## module01 Classical Cryptography
 
-
-
 * __Cryptography overview__
   * [Cryptography](https://en.wikipedia.org/wiki/Cryptography)
   * [Outline of cryptography](https://en.wikipedia.org/wiki/Outline\_of\_cryptography)
@@ -33,7 +31,7 @@ course materials and references for its350
 
   * [One-time pad cipher](https://en.wikipedia.org/wiki/One-time\_pad)
     * [One-time pad](https://en.wikibooks.org/wiki/Cryptography/One\_time\_pads)
-    * [One-time Pad](http://users.telenet.be/d.rijmenants/en/onetimepad.htm)
+      * [One-time Pad](http://users.telenet.be/d.rijmenants/en/onetimepad.htm)
     * _Data (Information) representation (encoding)_
       * [Computer file](https://en.wikipedia.org/wiki/Computer\_file)
       * [Hex editor](https://en.wikipedia.org/wiki/Hex\_editor)
@@ -77,8 +75,9 @@ course materials and references for its350
 
 * __Software__
   * [cryptool](https://www.cryptool.org/en/)
-  * [dancing-men fonts](https://www.free-fonts.com/dancing-men)
-  * [1001 free fonts](https://www.1001freefonts.com/)
+  * _cipher fonts_
+    * [dancing-men fonts](https://www.free-fonts.com/dancing-men)
+    * [1001 free fonts](https://www.1001freefonts.com/)
   * [Ubuntu wiki fonts](https://wiki.ubuntu.com/Fonts)
   * [Ubuntu font help](https://help.ubuntu.com/community/Fonts)
 
