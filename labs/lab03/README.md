@@ -7,13 +7,13 @@ __Description__
 
 Get familiar with the source code for One-time pad cipher, complete the following tasks:
 
-* Use Linux commands and Python to read and write text files in binary mode
-* Use Linux commands and Python to demonstrate encryption and decryption on text file [GeneralMontgomerysDDaySpeech.txt](./data/GeneralMontgomerysDDaySpeech.txt) with One-time pad cipher in both module addition and bit xor algorithms.
-* Use Linux commands and Python to demonstrate encryption and decryption on _ONLY the DATA_ of image file !
+* (8%) Use Linux commands and Python to read and write text files in binary mode
+* (40%)Use Linux commands and Python to demonstrate encryption and decryption on text file [GeneralMontgomerysDDaySpeech.txt](./data/GeneralMontgomerysDDaySpeech.txt) with One-time pad cipher in both module addition(20%) and bit xor algorithms(20%).
+* (40%)Use Linux commands and Python to demonstrate encryption and decryption on _ONLY the DATA_ of image file !
 
 ![GeneralMontgomerysDDayPlan.jpg](./data/GeneralMontgomerysDDayPlan.jpg) 
 
-with One-time pad cipher in both module addition and bit xor algorithms.
+with One-time pad cipher in both module addition(20%) and bit xor algorithms(20%).
 
 
 *Image processing*
@@ -35,7 +35,7 @@ __Report__
 
 Write a report about the process you complete the tasks in the description, key screen snapshots are needed as evidences.
 
-_Review questions:_
+_(12%) Review questions:_
 
 * How to generate the key truly randomly in one-time pad cipher?
 * How to make sure the one-time pad key is used only once?

@@ -9,7 +9,7 @@ Get familiar with the source code for [Caesar cipher](https://en.wikipedia.org/w
 
 Put the contents of plaintext or ciphertext in source code is _NOT encouraged_.
 
-1. Write code to read and write text files in text mode.
+1. (10%) Write code to read and write text files in text mode.
   * create a file
   * write some sentence into it
   * read its contents
@@ -21,18 +21,18 @@ For each encryption and decryption below, complete these steps:
 * Decrypt the ciphertext
 * Compare the decryted message with the original message, *they should match*.
 
-2. Write code to demonstrate encryption and decryption on text file [military plan one.txt](./data/military%20plan%20one.txt) with Caesar cipher
-3. Write code to demonstrate encryption and decryption on text file [military plan two.txt](./data/military%20plan%20two.txt) with Caesar cipher
-4. Write code to demonstrate encryption and decryption on text file [military plan three.txt](./data/military%20plan%20three.txt) with Caesar cipher
-5. Write code to demonstrate encryption and decryption on text file [military plan one.txt](./data/military%20plan%20one.txt) with Simtran cipher
-6. Write code to demonstrate encryption and decryption on text file [military plan two.txt](./data/military%20plan%20two.txt) with Simtran cipher
-7. Write code to demonstrate encryption and decryption on text file [military plan three.txt](./data/military%20plan%20three.txt) with Simtran cipher
+2. (13%) Write code to demonstrate encryption and decryption on text file [military plan one.txt](./data/military%20plan%20one.txt) with Caesar cipher
+3. (13%) Write code to demonstrate encryption and decryption on text file [military plan two.txt](./data/military%20plan%20two.txt) with Caesar cipher
+4. (13%) Write code to demonstrate encryption and decryption on text file [military plan three.txt](./data/military%20plan%20three.txt) with Caesar cipher
+5. (13%) Write code to demonstrate encryption and decryption on text file [military plan one.txt](./data/military%20plan%20one.txt) with Simtran cipher
+6. (13%) Write code to demonstrate encryption and decryption on text file [military plan two.txt](./data/military%20plan%20two.txt) with Simtran cipher
+7. (13%) Write code to demonstrate encryption and decryption on text file [military plan three.txt](./data/military%20plan%20three.txt) with Simtran cipher
 	
 __Report__
 
 Write a report about the process you complete the tasks in the description, key screen snapshots are needed as evidences.
 
-_Review questions:_
+_(12%) Review questions:_
 
 1. How to define an appropriate alphabet in Caesar cipher? Why?
 2. In Simtran cipher, why an alphabet is NOT needed?

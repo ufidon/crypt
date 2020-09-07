@@ -29,9 +29,9 @@ __Report__
 
 Write a report about:
 
-* the process you setup the lab environment (the VM summary is good)
-* the process you test the NAT network
-* the process you setup and test the shared folder
+* (20%) the process you setup the lab environment (the VM summary is good)
+* (40%) the process you test the NAT network
+* (40%)the process you setup and test the shared folder
 
 __Demo video__
 * [How to setup SEED labs?](https://youtu.be/pc5QJPiFbNQ)
