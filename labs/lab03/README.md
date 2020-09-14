@@ -41,7 +41,8 @@ _(12%) Review questions:_
 * How to make sure the one-time pad key is used only once?
 * Suppose sender and receiver locate way from each other, how could they share the key securely before their confidential communication (encrypt the communication with one-time pad cipher after they share the same secret key)?
 
-
+__Demo video__
+* [Lab03: One-time pad cipher](https://youtu.be/saP_sR3jI_Q)
 
 __References__
 * [General Montgomery’s One Page Battle Plan for D-Day Released](https://www.warhistoryonline.com/war-articles/battle-plans-d-day-released.html)
