@@ -23,6 +23,7 @@ Setup the lab environment and get familiar with the SEED VM. You need a USB 3.0+
     * Create ONE VM, install it; then clone the other two and change their settings
 * Browse and play with the integrated software
 * Practice the basic Linux commands on the [Linux command memento](https://bootlin.com/doc/legacy/command-line/)
+* *If SEED VMs can NOT adjust to full screen automatically, it can be changed manually inside the VM. System Settings -> Display -> Resolution (change it what you want.)*
 
 	
 __Report__
