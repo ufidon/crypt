@@ -5,6 +5,8 @@ course materials and references for its350
 
 __Description__
 
+This lab is revised from SEED lab [Crypto Lab -- Secret-Key Encryption](https://seedsecuritylabs.org/Labs_16.04/Crypto/Crypto_Encryption/).
+
 Get familiar with block cipher mode of operation, complete the following tasks:
 
 1. (9%, each mode 3%)Encrypting, decrypting, comparing (the decrypted with the original) a data file using different ciphers and modes, at least 3 different ones, for example
@@ -45,7 +47,9 @@ _Review questions:_
 3. (8%, each mode 2%)In task 4, how much information can you recover by decrypting the corrupted file, if the encryption mode is ECB, CBC, CFB, or OFB, respectively?  
 
 
+__Demo video__
 
+* [Lab04 Block Cipher Operation Modes](https://youtu.be/mREu5hxsub4)
 
 __References__
 * [General Montgomery’s One Page Battle Plan for D-Day Released](https://www.warhistoryonline.com/war-articles/battle-plans-d-day-released.html)
