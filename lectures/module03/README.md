@@ -40,3 +40,18 @@ course materials and references for its350
 * [QR Code Generator](http://goqr.me/)
 * [QR Code Generator](http://zxing.appspot.com/generator)
 * [ZXing Decoder Online](https://zxing.org/w/decode.jspx)
+* [cryptool](https://www.cryptool.org/en/)
+
+* __Development__
+  * [Comparison of cryptography libraries](https://en.wikipedia.org/wiki/Comparison\_of\_cryptography\_libraries)
+  * [Crypto++](https://en.wikipedia.org/wiki/Crypto%2B%2B)
+    * [Crypto++® Library](https://www.cryptopp.com/)
+    * [Crypto++: free C++ Class Library of Cryptographic Schemes](https://github.com/weidai11/cryptopp)
+  * [Cryptlib](https://en.wikipedia.org/wiki/Cryptlib)
+    * [cryptlib](https://www.cs.auckland.ac.nz/~pgut001/cryptlib/)
+  * [OpenSSL](https://en.wikipedia.org/wiki/OpenSSL)
+    * [openssl ow](https://www.openssl.org/)
+    * [openssl wiki](https://wiki.openssl.org/index.php/Main\_Page)
+    * [OpenSSL Command-Line HOWTO](https://www.madboa.com/geek/openssl/)
+    * [OpenSSL Cookbook](https://www.feistyduck.com/books/openssl-cookbook/)
+    * [openssl source code](https://github.com/openssl/openssl)
