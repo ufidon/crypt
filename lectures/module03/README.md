@@ -34,14 +34,14 @@ course materials and references for its350
     * [Sponge function](https://en.wikipedia.org/wiki/Sponge\_function)
 
 ## Online tools
-* [Barcode Label Printer - Free Online Barcode Generator](https://www.barcodesinc.com/generator/index.php)
-* [barcode-generator](http://www.barcode-generator.org/)
-* [Barcode generator](http://online-barcode-generator.net/)
-* [QR Code Generator](http://goqr.me/)
-* [QR Code Generator](http://zxing.appspot.com/generator)
-* [ZXing Decoder Online](https://zxing.org/w/decode.jspx)
-* [cryptool](https://www.cryptool.org/en/)
-
+* __online barcode generators__
+  * [Barcode Label Printer - Free Online Barcode Generator](https://www.barcodesinc.com/generator/index.php)
+  * [barcode-generator](http://www.barcode-generator.org/)
+  * [Barcode generator](http://online-barcode-generator.net/)
+  * [QR Code Generator](http://goqr.me/)
+  * [QR Code Generator](http://zxing.appspot.com/generator)
+  * [ZXing Decoder Online](https://zxing.org/w/decode.jspx)
+  * [cryptool](https://www.cryptool.org/en/)
 * __Development__
   * [Comparison of cryptography libraries](https://en.wikipedia.org/wiki/Comparison\_of\_cryptography\_libraries)
   * [Crypto++](https://en.wikipedia.org/wiki/Crypto%2B%2B)
