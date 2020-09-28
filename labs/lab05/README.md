@@ -10,18 +10,19 @@ Demonstrate the process `Symmetric key exchange with public cipher' using RSA fo
 _Symmetric key exchange with public cipher_
 
 Suppose Alice wants to communicate with Bob confidentially, they follow the steps below:
-1. (10%)Alice generates a pair of public/private keys
+1. (10%)Alice generates a pair of public/private keys using RSA
 2. (5%)Alice sends her public key to Bob
 3. (15%)Bob uses Alice’s public key to encrypt  the symmetric cipher’s specifics (a text file) then sends the ciphertext to Alice. The symmetric cipher's specifics includes:
   * the symmetric cipher is: -aes-128-ofb
-  * a symmetric key (session key) ,  which should be generated randomly
+  * a symmetric key (session key) ,  which should be generated randomly(openssl rand -hex 16)
+  * an initial vector (iv), which should be generated randomly as well(openssl rand -hex 16)
 4. (10%)Alice decrypts the ciphertext with her private key to get the
 symmetric key (session key) and the symmetric cipher’s specifics
 5. (40%)Alice and Bob secure their following communication (session) with the symmetric key (session key) and the symmetric cipher from the symmetric cipher’s specifics
   * (10%)Alice downloads an image from Internet and uses it as the session content. She only encrypts the _data portion_ of the image then sends the encrypted image to Bob
-  * (10%)Bob received then encrypted image from Alice, then decrypts it to get the plain image
+  * (10%)Bob received the encrypted image from Alice, then decrypts it to get the plain image
   * (10%)Bob downloads an image (should be different from Alice's) from Internet and uses it as the session content. He only encrypts the _data portion_ of the image then sends the encrypted image to Alice
-  * (10%)Alice received then encrypted image from Alice, then decrypts it to get the plain image
+  * (10%)Alice received the encrypted image from Alice, then decrypts it to get the plain image
 6. The session key is discarded after the session
 
 
@@ -49,6 +50,9 @@ _Review questions:_
    1. (10%) answer and explain
    2. (10%) performance comparison
 
+__Demo video__
+
+* [Secret Key Exchange With RSA](https://youtu.be/Avf9w72CtDc)
 
 __References__
 
