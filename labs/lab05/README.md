@@ -56,3 +56,4 @@ __References__
 * [OpenSSL Command-Line HOWTO](https://www.madboa.com/geek/openssl/)
 * [OpenSSL Cookbook](https://www.feistyduck.com/books/openssl-cookbook/)
 * [openssl-speed, speed - test library performance](https://www.openssl.org/docs/man1.1.1/man1/openssl-speed.html)
+* [How can I interpret openssl speed output?](https://stackoverflow.com/questions/17410270/how-can-i-interpret-openssl-speed-output)
