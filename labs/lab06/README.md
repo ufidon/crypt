@@ -44,7 +44,7 @@ Show your calculation.
     * SHA512
 
 
-	3. (20%, each hash code 10%) Download [gpg4win-3.1.4.exe](https://www.gpg4win.org/) from its [official website](https://www.gpg4win.org/) then check its integrity by SHA256 and SHA1.
+	3. (20%, each hash code 10%) Download the lastest [gpg4win](https://www.gpg4win.org/) from its [official website](https://www.gpg4win.org/) then check its integrity against its given hash code.
 
 __Report__
 
