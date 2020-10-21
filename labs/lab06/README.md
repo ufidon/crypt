@@ -50,7 +50,9 @@ __Report__
 
 Write a report about the process you complete the tasks in the description, key screen snapshots are needed as evidences.
 
+__Demo video__
 
+* [Data Integrity](https://youtu.be/L7TpOqTlg9s)
 
 __References__
 * [Gpg4win](https://www.gpg4win.org/)
