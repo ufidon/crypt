@@ -76,6 +76,23 @@ course materials and references for its350
     * _tools_
       * [Kali Linux Tools Listing](https://tools.kali.org/tools-listing)
       * [13 Best Hacking Tools For Windows, Linux, macOS](https://fossbytes.com/best-hacking-tools-of-2016-windows-linux-mac-osx/)
+  * [Network attack](https://en.wikipedia.org/wiki/Network_security)
+    * [Smurf attack](https://en.wikipedia.org/wiki/Smurf_attack)
+      * [Sniffing attack](https://en.wikipedia.org/wiki/Sniffing_attack)
+        * [Packet analyzer](https://en.wikipedia.org/wiki/Packet_analyzer)
+          * [Comparison of packet analyzers](https://en.wikipedia.org/wiki/Comparison_of_packet_analyzers)
+          * [scapy](https://scapy.net/)
+          * [Wireshark](https://en.wikipedia.org/wiki/Wireshark)
+          * [Tcpdump](https://en.wikipedia.org/wiki/Tcpdump)
+          * [Pcap](https://en.wikipedia.org/wiki/Pcap)
+          * [Packet capture appliance](https://en.wikipedia.org/wiki/Packet_capture_appliance)
+        * [Port scanner](https://en.wikipedia.org/wiki/Port_scanner)
+        * [Eavesdropping](https://en.wikipedia.org/wiki/Eavesdropping)
+        * [Telephone tapping](https://en.wikipedia.org/wiki/Telephone_tapping)
+      * [Spoofing attack](https://en.wikipedia.org/wiki/Spoofing_attack)
+        * [IP address spoofing](https://en.wikipedia.org/wiki/IP_address_spoofing)
+        * [ARP spoofing](https://en.wikipedia.org/wiki/ARP_spoofing)
+    * [digital attack map](https://www.digitalattackmap.com/)
 
 * _Intrusion Detection and Prevention_
   * _concepts_
@@ -98,6 +115,8 @@ course materials and references for its350
       * [Internet security](https://en.wikipedia.org/wiki/Internet\_security)
       * [Firewall](https://en.wikipedia.org/wiki/Firewall\_\(computing\))
         * [Firewall architectures](https://docstore.mik.ua/orelly/networking/firewall/ch04\_02.htm)
+          * [Ingress filtering](https://en.wikipedia.org/wiki/Ingress_filtering)
+          * [Egress filtering](https://en.wikipedia.org/wiki/Egress_filtering)
         * [Next-generation firewall](https://en.wikipedia.org/wiki/Next-generation\_firewall)
         * [Comparison of firewalls](https://en.wikipedia.org/wiki/Comparison\_of\_firewalls)
         * [Netfilter](https://en.wikipedia.org/wiki/Netfilter)
