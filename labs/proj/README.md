@@ -4,18 +4,18 @@ course materials and references for its350
 ## Proj: Inside-out Enigma machine
 
 ### Description
-In this project, firstly practice message encryption/decryption on an [Enigma machine simulator](http://users.telenet.be/d.rijmenants/en/enigmasim.htm), secondly create a [paper Enigma machine](http://wiki.franklinheath.co.uk/index.php/Enigma/Paper_Enigma) to encrypt messages then decrypt the ciphertexts on the simulator Enigma machine, lastly, encrypt messages on the simulator Enigma machine then decrypt the ciphertexts on the paper Enigma machine.
+In this project, firstly practice message decryption on the [Enigma machine simulator](http://users.telenet.be/d.rijmenants/en/enigmasim.htm), secondly create a [paper Enigma machine](http://wiki.franklinheath.co.uk/index.php/Enigma/Paper_Enigma) to decrypt the same messages, you should get the same results as with the simulator Enigma machine, lastly, decrypt a ciphertext on the paper Enigma machine then encrypt the plaintext on the simulator Enigma machine as a verification, you should get the ciphertext.
 
 The simulation Enigma machine can exactly simulate the 3-rotor Wehrmacht (Heer and Luftwaffe) Enigma, the 3-rotor Kriegsmarine M3, also called Funkschlussel M, and the famous 4-rotor Kriegmarine M4 Enigma cipher machine, used during World War II from 1939 until 1945. The paper Enigma machine is completely compatible with all settings of a real Enigma machine (models I, M1, M2 and M3).
 
 ### Task 1 (40%): Using Enigma machine simulator
 1. Download the [Enigma machine simulator](http://users.telenet.be/d.rijmenants/en/enigmasim.htm) and the [Enigma codebook tool](http://users.telenet.be/d.rijmenants/en/codebook.htm), install them on a Windows machine.
 2. Follow this video [How to Use Enigma](https://youtu.be/RxUWKiVncMg) to quickly get familiar with the Enigma machine.
-3. In the Enigma machine, choose one of the following model, *no ring settings or plugboard settings at the beginning*:
+3. In the Enigma machine, choose one of the following two models, *no ring settings or plugboard settings at the beginning*:
 
 ![the 3-rotor Kriegsmarine M3 Enigma](./imgs/Kriegsmarine.png) ![the 3-rotor Wehrmacht (Heer and Luftwaffe) Enigma](./imgs/Wehrmacht.png)
 
-4. Complete the encryption/decryption practices described in the [paper Enigma machine](http://wiki.franklinheath.co.uk/index.php/Enigma/Paper_Enigma). *Each practice is a continuation of its previous one*:
+4. Complete the decryption practices described in the [paper Enigma machine](http://wiki.franklinheath.co.uk/index.php/Enigma/Paper_Enigma). *Each practice is a continuation of its previous one*:
    1. With message key "A B C" to decrypt "A E F A E  J X X B N  X Y J T Y". The plaintext is one correct English word.
    2. With message key "A B R" to decrypt "M A B E K  G Z X S G". The plaintext are two correct English words, and your rotors should finish at positions A C B.
    3. With message key "A D S" to decipher "R Z F O G  F Y H P L". The plaintext are  two correct English words, and your rotors finish at positions B F C.
@@ -25,9 +25,9 @@ The simulation Enigma machine can exactly simulate the 3-rotor Wehrmacht (Heer a
 ### Task 2 (40%): Building a paper Enigma machine
 Follow the [paper Enigma machine](http://wiki.franklinheath.co.uk/index.php/Enigma/Paper_Enigma) to build yours, then complete the following practices. *Each practice is a continuation of its previous one, take a video when you are doing the practices.*
 *Again, no ring settings or plugboard settings at the beginning.*
-1. Complete the encryption/decryption practices described in the [paper Enigma machine](http://wiki.franklinheath.co.uk/index.php/Enigma/Paper_Enigma). You should get the same results as Task 1.
+1. Complete the decryption practices described in the [paper Enigma machine](http://wiki.franklinheath.co.uk/index.php/Enigma/Paper_Enigma). You should get the same results as Task 1.
 2. With ring settings at 17, 7 and 19, plug board settings for these 4 pairs: "BX CF DG EV",  and message key "F B I" to decipher "UIBUT MIS KUYD", the plaintext is a blessing sentence with three correct English words.
-3. Verify your result in the previous practice with the Enigma machine simulator.
+3. With the same settings, encrypt the plaintext got in the previous practice with the Enigma machine simulator, you should get the ciphertext "UIBUT MIS KUYD".
 
 ### (20%): Report
 
