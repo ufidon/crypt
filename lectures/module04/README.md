@@ -36,19 +36,9 @@ course materials and references for its350
       * [Let's Encrypt](https://letsencrypt.org/)
     * _Practices_
       * [The Most Common OpenSSL Commands](https://www.sslshopper.com/article-most-common-openssl-commands.html)
+      * [OpenSSL Command-Line HOWTO](https://www.madboa.com/geek/openssl/)
       * [OpenSSL command cheatsheet](https://www.freecodecamp.org/news/openssl-command-cheatsheet-b441be1e8c4a/)
       * [x509 command](https://www.openssl.org/docs/man1.0.2/man1/x509.html)
-  * [Key server (cryptographic)](https://en.wikipedia.org/wiki/Key\_server\_\(cryptographic\))
-    * [PGP Global Directory](https://keyserver.pgp.com)
-    * [sks-keyservers](https://sks-keyservers.net/)
-      * [SKS Keyserver source code](https://github.com/SKS-Keyserver/sks-keyserver)
-    * [Hockeypuck OpenPGP keyserver](https://keyserver.ubuntu.com/)
-    * [PGP Public Key Server](https://pgp.key-server.io/)
-    * [MIT PGP Public Key Server](https://pgp.mit.edu/)
-  * [The GNU Privacy Handbook](https://www.gnupg.org/gph/en/manual/book1.html)
-
-
-
 * __Authentication__
   * [Authentication](https://en.wikipedia.org/wiki/Authentication)
     * [Multi-factor authentication](https://en.wikipedia.org/wiki/Multi-factor\_authentication)
@@ -95,6 +85,14 @@ course materials and references for its350
       * [GnuPG](https://gnupg.org/)
       * [Gnu Privacy Guard (GnuPG) Mini Howto](https://www.dewinter.com/gnupg_howto/english/GPGMiniHowto.html)
       * [How to display gpg key details without importing it?](https://stackoverflow.com/questions/22136029/how-to-display-gpg-key-details-without-importing-it)
+    * [Key server (cryptographic)](https://en.wikipedia.org/wiki/Key\_server\_\(cryptographic\))
+      * [PGP Global Directory](https://keyserver.pgp.com)
+      * [sks-keyservers](https://sks-keyservers.net/)
+        * [SKS Keyserver source code](https://github.com/SKS-Keyserver/sks-keyserver)
+      * [Hockeypuck OpenPGP keyserver](https://keyserver.ubuntu.com/)
+      * [PGP Public Key Server](https://pgp.key-server.io/)
+      * [MIT PGP Public Key Server](https://pgp.mit.edu/)
+    * [The GNU Privacy Handbook](https://www.gnupg.org/gph/en/manual/book1.html)
   * [Steganography](https://en.wikipedia.org/wiki/Steganography)
     * [OpenStego](https://www.openstego.com/)
     * [SteGUI](http://stegui.sourceforge.net/)

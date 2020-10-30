@@ -168,3 +168,4 @@ __References__
 * [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport\_Layer\_Security)
 * [SEED Public-Key Infrasturcture (PKI) Lab](https://seedsecuritylabs.org/Labs\_16.04/Crypto/Crypto\_PKI/)
 * [How do I install a root certificate?](https://askubuntu.com/questions/73287/how-do-i-install-a-root-certificate)
+* [OpenSSL Command-Line HOWTO](https://www.madboa.com/geek/openssl/)
