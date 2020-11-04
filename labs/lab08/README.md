@@ -73,7 +73,7 @@ openssl ca -cert ca.crt  -keyfile ca.key -config openssl.cnf -in req/BillClinton
 ```
 
 
-* Step 4: _Verifying Certificates._  Copy the CA's certificate ca.crt  from folder pki/ca and your certificate from pki/ca/certs to the same folder as your private key's. Run the following command to verify CA's signature on your certificate.
+* Step 4: _Verifying Certificates._  Copy the CA's certificate ca.crt  from folder pki/ca and your certificate from pki/ca/crts to the same folder as your private key's. Run the following command to verify CA's signature on your certificate.
 
 
 ```bash
@@ -160,6 +160,8 @@ __Report__
 
 Write a report about the process you complete the tasks in the description, key screen snapshots are needed as evidences.
 
+__Demo__
+* [Public key infrastructure](https://youtu.be/nEgCHRrdGxI)
 
 __References__
 
