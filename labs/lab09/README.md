@@ -120,7 +120,7 @@ gpg --export -a  "your email@pnw.edu" | tee "your name.pub"
 * Step 2: Publish(Upload) your OpenPGP public key to one of [OpenPGPkeyserver](http://keys.gnupg.net/),  [MIT PGP Public Key Server](https://pgp.mit.edu/), [Hockeypuck OpenPGP keyserver](http://keyserver.ubuntu.com/) and [Mailvelope Key Server](https://keys.mailvelope.com/), then tell your partner which server has your public key. _Some key servers may be blocked by the campus network, keep trying until you find a working one._
 
 		
-* Step 3: Watch this video [Encrypt Your Gmail/Yahoo/Outlook/iCloud and Other Webmail](https://youtu.be/\-Hz40\_P6bVE), using [Mailvelope](https://www.mailvelope.com/) to import your partner's public PGP key that published on a keyserver, send an encrypted and signed email to your partner, then decrypt and verify his/her encrypted and signed email that sent to you. Do you need to certify your partner's public key? _Work this task on your host machine_
+* Step 3: Watch this video [Encrypt Your Gmail/Yahoo/Outlook/iCloud and Other Webmail](https://youtu.be/\-Hz40\_P6bVE), using [Mailvelope](https://www.mailvelope.com/) to import your partner's public PGP key that published on a keyserver, send an encrypted and signed email to your partner, then decrypt and verify his/her encrypted and signed email that sent to you. Do you need to certify your partner's public key? **Work this task on your host machine since the Firefox in SEED VM is outdated.**
  
 ```bash
 # 1. Download the latest Firefox then unzip it
@@ -264,6 +264,8 @@ For further information refer to [Gnu Privacy Guard (GnuPG) Mini Howto](https://
 
 Write a report about the process you complete the tasks in the description, key screen snapshots are needed as evidences.
 
+### No Demo video
+Since the commands are commented in detail so there is NO demo video.
 
 ### References
 * [Pretty Good Privacy.](https://en.wikipedia.org/wiki/Pretty\_Good\_Privacy)
