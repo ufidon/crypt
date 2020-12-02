@@ -6,6 +6,12 @@ course materials and references for its350
 ### Description
 **This lab is adapted from [SEED Linux Firewall Exploration Lab](https://seedsecuritylabs.org/Labs\_16.04/Networking/Firewall/)**
 
+- [x] Task 1: Using Firewall
+- [x] Task 3: Evading Egress Filtering
+  - [x] Task 3.a:  Telnet to Machine B through the firewall
+  - [x] Task  3.b:  Connect to Facebook using SSH Tunnel.
+- [x] Task 4: Evading Ingress Filtering
+
 In this lab, we will learn
 
 * how to use the firewall [Netfilter](https://en.wikipedia.org/wiki/Netfilter) in Linux through its command line interface [ufw](http://manpages.ubuntu.com/manpages/xenial/en/man8/ufw.8.html)? [Netfilter](https://en.wikipedia.org/wiki/Netfilter) also has a GUI [gufw](http://gufw.org/).
