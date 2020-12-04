@@ -72,6 +72,8 @@ press key 'SPACE' to scroll down, 'q' to quit.
 :sparkles: dig www.facebook.com  
 :sparkles: dig facebook.com
 
+**Note: the ip addresses of Facebook change dynamically, so replace it with syr.edu in this lab**
+
   * Check you can access the external web site E using Firefox
   * Find the IP addresses of the external web site E using  
   :sparkles: dig E
