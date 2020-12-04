@@ -32,7 +32,22 @@ ip addr
 
 
 #### Task2 (20%): Use Scapy
+
+Prerequisite: Scapy must be installed first.
+```bash
+# install pip
+cd
+sudo python3 get-pip.py
+# install scapy
+sudo pip3 install scapy
+# verify scapy is successfully installed
+scapy
+# refer to : https://scapy.readthedocs.io/en/latest/installation.html
+# install optional packages, many of them are not compatible with SEED
+```
+
 To use Scapy in a Python3 program, execute this program using Python3. Use subl to create a simple program named as 'myscapy.py' as below.  We should run Python3 using the root privilege because the privilege is required for sniffing and spoofing packets.
+
 
 ```python
 #!/usr/bin/env python
