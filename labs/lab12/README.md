@@ -19,7 +19,7 @@ In this lab, we will learn
 
  
 
-**Two VMs are needed, three VMs are better:**
+**Two VMs are needed, three VMs are better. The third VM is not used below unless you want to setup a secret website on it:**
 
 * use
 ```bash
@@ -118,7 +118,7 @@ sudo subl /var/www/html/index.html
 # 2. In index.html, find the sentence "Apache2 Ubuntu Default Page" then change it to "Apache2 Ubuntu VM1"
 ```
 
-* *Step 1:(6%)* Setup firewall rules blocking ingress ssh and http/https on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>}.
+* *Step 1:(6%)* Setup firewall rules blocking ingress ssh and http/https on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>.
 
 :sparkles:  sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 22
 
