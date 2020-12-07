@@ -19,7 +19,7 @@ In this lab, we will learn
 
  
 
-**Three VMs are needed:**
+**Two VMs are needed, three VMs are better:**
 
 * use
 ```bash
@@ -31,13 +31,13 @@ to find the IP settings for each VM, make sure all VMs can communicate (ping) wi
 
 ### Task 1 (40%): Using Firewall
 
-1. Step 1: *Get familiar with ufw:* Find its user manual from command line using 
+1. Step 1(4%): *Get familiar with ufw:* Find its user manual from command line using 
 ```bash
 man ufw
 ```
 press key 'SPACE' to scroll down, 'q' to quit.
 
-2. Step 2: *Set the default rules and enable ufw on all VMs:* run the commands on each VM.
+2. Step 2(6%, each command 2%): *Set the default rules and enable ufw on all VMs:* run the commands on each VM.
 
   * Setup the default policy to *allow*: 
   
@@ -50,16 +50,16 @@ press key 'SPACE' to scroll down, 'q' to quit.
   :sparkles: sudo ufw status verbose. 
   **Run this command to verify your operation result every time when you add/modify/delete firewall rules.**
 
-3. Step 3: Block egress and ingress of telnet on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>:  Set the firewall rules then try telnet. *Every time you telneted into another VM, run command 'ls' to check you are in the other VM now, after that, type 'exit' to return to your original VM.*
+3. Step 3(15%): Block egress and ingress of telnet on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>:  Set the firewall rules then try telnet. *Every time you telneted into another VM, run command 'ls' to check you are in the other VM now, after that, type 'exit' to return to your original VM.*
 
-  * Check you can telnet from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, run the command on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>:  
+  * (3%)Check you can telnet from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, run the command on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>:  
   :sparkles: telnet <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>
-  * Check you can telnet from <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> to <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the command on <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>:  
+  * (3%)Check you can telnet from <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> to <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the command on <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>:  
   :sparkles: telnet <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>
-  * Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from doing telnet to <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>(Block egress, from the perspective of <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the commands on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>):  
+  * (3%)Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from doing telnet to <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>(Block egress, from the perspective of <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the commands on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>):  
   :sparkles: sudo ufw deny out to <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  port 23  
   :sparkles: telnet <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  will fail
-  * Prevent <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> from doing telnet to Machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>(Block ingress, again from the perspective of <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, set the firewall rule on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>):  
+  * (6%)Prevent <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/> from doing telnet to Machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>(Block ingress, again from the perspective of <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, set the firewall rule on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>):  
   :sparkles: sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 23 
 
   then from <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, try telnet to <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, run the command in <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>
@@ -68,22 +68,26 @@ press key 'SPACE' to scroll down, 'q' to quit.
   
   will fail
 
-4. Step 4: Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from visiting an external web site E: a website may have several IP addresses, they should be all blocked. The IP addresses of domain name E can be found using command [dig E](https://superuser.com/questions/152576/how-to-get-all-ips-of-a-domain), for example,  
+4. Step 4(15%): Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from visiting an external web site E: a website may have several IP addresses, they should be all blocked. The IP addresses of domain name E can be found using command [dig E](https://superuser.com/questions/152576/how-to-get-all-ips-of-a-domain), for example,  
 :sparkles: dig www.facebook.com  
 :sparkles: dig facebook.com
 
 **Note: the ip addresses of Facebook change dynamically, so replace it with syr.edu in this lab**
 
-  * Check you can access the external web site E using Firefox
-  * Find the IP addresses of the external web site E using  
-  :sparkles: dig E
-  * Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from visiting an external web site E:  
-  :sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 80   
-  :sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 443
-  * Check you can NOT access the external web site E using Firefox now. *To become effective: close tabs of Facebook, clear Firefox cached data, then restart Firefox*
+
+* (2%)Check you can access the external web site E using Firefox
+* (4%)Find the IP addresses of the external web site E using  
+:sparkles: dig www.syr.edu  
+:sparkles: dig syr.edu
+
+* (9%)Prevent <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> from visiting an external web site E:  
+:sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 80   
+:sparkles: sudo ufw deny out to <!-- $ I\!P_E $ --> <img style="transform: translateY(0.25em);" src="../../svg/WyzIZA4mlo.svg"/> port 443
+* Check you can NOT access the external web site E using Firefox now. *To become effective: close tabs of website E, clear Firefox cached data, then restart Firefox*
  
-### Task 2 (30%): Evading Egress Filtering
-Now <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> seems like a work computer which blocks surfing Facebook. If you can login your home computer, say <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, remotely via ssh(like the secure version of telnet) from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, then you can setup a  ssh tunnel to evade the egress blockage ruled by your company firewall.  *Every time you set a ssh tunnel into another VM, run command 'ls' to check you are in the other VM now, after that, leave the terminal open to keep the ssh tunnel alive.* If you want to close the tunnel, just type 'exit' in the remote terminal, you will come back to your local terminal. 
+### Task 2 (30%, each step 6%): Evading Egress Filtering
+Now <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> seems like a work computer which blocks surfing website E. If you can login your home computer, say <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, remotely via ssh(like the secure version of telnet) from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, then you can setup a  ssh tunnel to evade the egress blockage ruled by your company firewall.  *Every time you set a ssh tunnel into another VM, run command 'ls' to check you are in the other VM now, after that, leave the terminal open to keep the ssh tunnel alive.* If you want to close the tunnel, just type 'exit' in the remote terminal, you will come back to your local terminal. 
+
 
 Work on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, 
 
@@ -93,9 +97,9 @@ Work on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../
 * Step 2: setup proxy: Set the proxy for Firefox in <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> as the figure 'Proxy setup in Firefox using ssh tunnel':
 ![Proxy setup in Firefox using ssh tunnel](./figs/proxy.jpg)
 
-* Step 3: surf Facebook via the tunnel: Now browse website Facebook, can you surf it?
-* Step 4: break the tunnel: Close the tunnel, try browsing website Facebook again, can you surf it? 
-* Step 5: reconnect the tunnel: Setup the tunnel again, try browsing website Facebook again, can you surf it?
+* Step 3: surf website E via the tunnel: Now browse website website E, can you surf it?
+* Step 4: break the tunnel: Close the tunnel, try browsing website website E again, can you surf it? 
+* Step 5: reconnect the tunnel: Setup the tunnel again, try browsing website website E again, can you surf it?
 
 For further instructions and help refer to the SEED lab manual and the ufw manual.
 
@@ -106,23 +110,30 @@ Then you can evade the ingress blockage  through ssh tunnel using *reverse port 
 
 *Reverse port forwarding* is also called *remote port forwarding* in many literatures. For further information, please refer to [SSH Tunnel - Local and Remote Port Forwarding Explained With Examples](https://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html). Reverse port forwarding is a type of static forwarding so *no proxy configuration* is needed.
 
+* Step 0(4%): On <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, setup a secret webpage. Run the following command to modify the default home page of localhost.
 
-* *Step 1:* Setup firewall rules blocking ingress ssh and http/https on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>}.
+```bash
+# 1. open index.html in subl
+sudo subl /var/www/html/index.html
+# 2. In index.html, find the sentence "Apache2 Ubuntu Default Page" then change it to "Apache2 Ubuntu VM1"
+```
+
+* *Step 1:(6%)* Setup firewall rules blocking ingress ssh and http/https on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>}.
 
 :sparkles:  sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 22
 
 :sparkles:  sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 80
 
 :sparkles:  sudo ufw deny in from <!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/>  to <!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/> port 443
-* *Step 2:* Reset the proxy of Firefox to 'No proxy' on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>
-* *Step 3:* Surf the secret website on your work machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>. Open Firefox, browse '  http://localhost', you should see a webpage says Apache worked.
-* *Step 4:* Setup a reverse tunnel from the work computer <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to the home <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>: 
+* *Step 2:(4%)* Reset the proxy of Firefox to 'No proxy' on <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>
+* *Step 3:(4%)* Surf the secret website on your work machine <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>. Open Firefox, browse '  http://localhost', you should see a webpage says Apache worked.
+* *Step 4:(4%)* Setup a reverse tunnel from the work computer <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/> to the home <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>: 
 
 :sparkles: ssh  -R  9000:<!-- $ I\!P_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/PKckoHvYoA.svg"/>:80  seed@<!-- $ I\!P_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/bmRyISnKxW.svg"/> 
 
 This command is run on the work computer <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>.
-* *Step 5:* Surf the secret website from home: On the home computer  <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, use Firefox browse   http://localhost:9000, the  secret web page in the company should show up.
-* *Step 6:* Manipulate the tunnel:
+* *Step 5:(4%)* Surf the secret website from home: On the home computer  <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, use Firefox browse   http://localhost:9000, the  secret web page in the company should show up.
+* *Step 6:(4%)* Manipulate the tunnel:
 	Break the tunnel from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, then in <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, refresh   http://localhost:9000 in Firefox, what do you observe?
 	Reconnect the tunnel from <!-- $ V\!M_1 $ --> <img style="transform: translateY(0.25em);" src="../../svg/5kQaDdVIfH.svg"/>, then in <!-- $ V\!M_2 $ --> <img style="transform: translateY(0.25em);" src="../../svg/cFHavC1LhJ.svg"/>, refresh   http://localhost:9000 in Firefox, what do you observe?
 
